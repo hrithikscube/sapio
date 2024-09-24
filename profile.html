@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
     <title>Sapio Business Profile</title>
 
     <style>
@@ -132,24 +130,13 @@
             --tw-contain-style: ;
         }
 
-        /*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
-*/
-        /*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
         *,
         ::before,
         ::after {
             box-sizing: border-box;
-            /* 1 */
             border-width: 0;
-            /* 2 */
             border-style: solid;
-            /* 2 */
             border-color: #e5e7eb;
-            /* 2 */
         }
 
         ::before,
@@ -157,15 +144,6 @@
             --tw-content: '';
         }
 
-        /*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
         html,
         :host {
             line-height: 1.5;
@@ -186,10 +164,7 @@
             /* 7 */
         }
 
-        /*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
+
         body {
             margin: 0;
             /* 1 */
@@ -197,11 +172,6 @@
             /* 2 */
         }
 
-        /*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
         hr {
             height: 0;
             /* 1 */
@@ -211,16 +181,12 @@
             /* 3 */
         }
 
-        /*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
+
         abbr:where([title]) {
             text-decoration: underline dotted;
         }
 
-        /*
-Remove the default font size and weight for headings.
-*/
+
         h1,
         h2,
         h3,
@@ -231,28 +197,18 @@ Remove the default font size and weight for headings.
             font-weight: inherit;
         }
 
-        /*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
+
         a {
             color: inherit;
             text-decoration: inherit;
         }
 
-        /*
-Add the correct font weight in Edge and Safari.
-*/
         b,
         strong {
             font-weight: bolder;
         }
 
-        /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
+
         code,
         kbd,
         samp,
@@ -267,16 +223,12 @@ Add the correct font weight in Edge and Safari.
             /* 4 */
         }
 
-        /*
-Add the correct font size in all browsers.
-*/
+
         small {
             font-size: 80%;
         }
 
-        /*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
+
         sub,
         sup {
             font-size: 75%;
@@ -293,11 +245,7 @@ Prevent `sub` and `sup` elements from affecting the line height in all browsers.
             top: -0.5em;
         }
 
-        /*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
+
         table {
             text-indent: 0;
             /* 1 */
@@ -307,11 +255,7 @@ Prevent `sub` and `sup` elements from affecting the line height in all browsers.
             /* 3 */
         }
 
-        /*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
+
         button,
         input,
         optgroup,
@@ -339,18 +283,13 @@ Prevent `sub` and `sup` elements from affecting the line height in all browsers.
             /* 3 */
         }
 
-        /*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
+
         button,
         select {
             text-transform: none;
         }
 
-        /*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
+
         button,
         input:where([type='button']),
         input:where([type='reset']),
@@ -363,39 +302,27 @@ Remove the inheritance of text transform in Edge and Firefox.
             /* 2 */
         }
 
-        /*
-Use the modern Firefox focus style for all focusable elements.
-*/
+
         :-moz-focusring {
             outline: auto;
         }
 
-        /*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
         :-moz-ui-invalid {
             box-shadow: none;
         }
 
-        /*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
+
         progress {
             vertical-align: baseline;
         }
 
-        /*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
+
         ::-webkit-inner-spin-button,
         ::-webkit-outer-spin-button {
             height: auto;
         }
 
-        /*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
+
         [type='search'] {
             -webkit-appearance: textfield;
             /* 1 */
@@ -403,17 +330,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
             /* 2 */
         }
 
-        /*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
         ::-webkit-search-decoration {
             -webkit-appearance: none;
         }
 
-        /*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
+
         ::-webkit-file-upload-button {
             -webkit-appearance: button;
             /* 1 */
@@ -421,16 +342,11 @@ Remove the inner padding in Chrome and Safari on macOS.
             /* 2 */
         }
 
-        /*
-Add the correct display in Chrome and Safari.
-*/
         summary {
             display: list-item;
         }
 
-        /*
-Removes the default spacing and border for appropriate elements.
-*/
+
         blockquote,
         dl,
         dd,
@@ -464,24 +380,17 @@ Removes the default spacing and border for appropriate elements.
             padding: 0;
         }
 
-        /*
-Reset default styling for dialogs.
-*/
+
         dialog {
             padding: 0;
         }
 
-        /*
-Prevent resizing textareas horizontally by default.
-*/
+
         textarea {
             resize: vertical;
         }
 
-        /*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
+
         input::placeholder,
         textarea::placeholder {
             opacity: 1;
@@ -490,26 +399,17 @@ Prevent resizing textareas horizontally by default.
             /* 2 */
         }
 
-        /*
-Set the default cursor for buttons.
-*/
         button,
         [role="button"] {
             cursor: pointer;
         }
 
-        /*
-Make sure disabled buttons don't get the pointer cursor.
-*/
+
         :disabled {
             cursor: default;
         }
 
-        /*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
+
         img,
         svg,
         video,
@@ -524,16 +424,13 @@ Make sure disabled buttons don't get the pointer cursor.
             /* 2 */
         }
 
-        /*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
+
         img,
         video {
             max-width: 100%;
             height: auto;
         }
 
-        /* Make elements with the HTML hidden attribute stay hidden by default */
         [hidden] {
             display: none;
         }
@@ -975,10 +872,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         }
 
         textarea::placeholder {
-            /* color: transparent; */
-            /* Makes the placeholder invisible */
             transition: color 0.2s;
-            /* Smooth transition for color change */
         }
 
         textarea:not(:placeholder-shown) {
@@ -1007,7 +901,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
 
         <div class="flex flex-col px-6 mt-12 gap-6">
-            <!-- hero banner -->
             <div class="flex flex-col items-center text-center gap-1">
 
                 <h2 class="text-2xl font-bold text-[#112427]">Surya Mummidivarapu</h2>
@@ -1017,7 +910,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- primary icons -->
             <div class="grid grid-cols-2 gap-3">
 
                 <div class="bg-white h-28 p-4 rounded-2xl flex flex-col items-center justify-center gap-2 text-center">
@@ -1050,7 +942,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- social icons -->
             <div class="w-full p-4 rounded-2xl bg-white grid grid-cols-5 gap-4">
 
                 <img src="assets/link.svg" alt="link" class="w-[40px] h-[40px]" />
@@ -1061,7 +952,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- our services -->
             <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
 
                 <h2 class="text-lg font-bold text-[#03436A]">Our Services</h2>
@@ -1093,7 +983,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- our products -->
             <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
                 <h2 class="text-lg font-bold text-[#03436A]">Our Products</h2>
 
@@ -1122,7 +1011,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
             </div>
 
-            <!-- make an appointment -->
             <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
                 <h2 class="text-lg font-bold text-[#03436A]">Make an Appointment</h2>
 
@@ -1138,7 +1026,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- enquiries -->
             <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
                 <h2 class="text-lg font-bold text-[#03436A]">Enquiries</h2>
 
@@ -1158,7 +1045,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     Message</button>
             </div>
 
-            <!-- business hours -->
             <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
                 <h2 class="text-lg font-bold text-[#03436A]">Business Hours</h2>
 
@@ -1170,7 +1056,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             </div>
 
-            <!-- feedback -->
             <div class="flex flex-col items-center justify-center mb-20">
 
                 <button id="feedback-btn">
@@ -1260,9 +1145,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
 
 
-                    <!-- <textarea rows="4" placeholder="Share your suggestions"
-                    class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
-                </textarea> -->
+
                     <textarea rows="4" name="notes" id="notes" placeholder="Enter your text here..."
                         class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
 </textarea>
