@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Sapio Business Profile</title>
+
+    <style>
+        textarea::placeholder {
+            color: transparent;
+            /* Makes the placeholder invisible */
+            transition: color 0.2s;
+            /* Smooth transition for color change */
+        }
+
+        textarea:not(:placeholder-shown) {
+            color: #000;
+            /* Default text color when there's content */
+        }
+
+        textarea:focus::placeholder {
+            color: #999;
+            /* Change the placeholder color on focus */
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+
+        * {
+            font-family: "Onest", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f2f2f2] relative">
+
+    <div class="lg:w-96 mx-auto w-full">
+        <div class="h-[250px] w-full relative">
+            <img src="assets/hero-banner.svg" alt="hero-banner" class="w-full h-full object-contain object-top" />
+
+            <div class="w-full h-full absolute -bottom-24 left-0 flex items-center justify-center">
+
+                <img src="assets/logo.svg" alt="logo" class="w-28 h-28" />
+
+            </div>
+        </div>
+
+        <div class="flex flex-col px-6 mt-12 gap-6">
+            <!-- hero banner -->
+            <div class="flex flex-col items-center text-center gap-1">
+
+                <h2 class="text-2xl font-bold text-[#112427]">Surya Mummidivarapu</h2>
+                <p class="text-base text-[#112427]">Founder & CEO</p>
+                <p class="text-[#4B5563] text-base">Sapio will authorise Channel Partners to sell on their own account.
+                </p>
+
+            </div>
+
+            <!-- primary icons -->
+            <div class="grid grid-cols-2 gap-3">
+
+                <div class="bg-white h-28 p-4 rounded-2xl flex flex-col items-center justify-center gap-2 text-center">
+
+                    <img src="assets/mail.svg" alt="mail" class="w-[48px] h-[48px]" />
+                    <p class="text-[#205052] text-sm font-medium">test@scube.me</p>
+
+                </div>
+
+                <div class="bg-white h-28 p-4 rounded-2xl flex flex-col items-center justify-center gap-2 text-center">
+
+                    <img src="assets/phone.svg" alt="phone" class="w-[48px] h-[48px]" />
+                    <p class="text-[#205052] text-sm font-medium">9731816547</p>
+
+                </div>
+
+                <div class="bg-white h-28 p-4 rounded-2xl flex flex-col items-center justify-center gap-2 text-center">
+
+                    <img src="assets/location.svg" alt="location" class="w-[48px] h-[48px]" />
+                    <p class="text-[#205052] text-sm font-medium">bangalore</p>
+
+                </div>
+
+                <div class="bg-white h-28 p-4 rounded-2xl flex flex-col items-center justify-center gap-2 text-center">
+
+                    <img src="assets/telephone.svg" alt="telephone.svg" class="w-[48px] h-[48px]" />
+                    <p class="text-[#205052] text-sm font-medium">telephone</p>
+
+                </div>
+
+            </div>
+
+            <!-- social icons -->
+            <div class="w-full p-4 rounded-2xl bg-white grid grid-cols-5 gap-4">
+
+                <img src="assets/link.svg" alt="link" class="w-[40px] h-[40px]" />
+                <img src="assets/facebook.svg" alt="facebook.svg" class="w-[40px] h-[40px]" />
+                <img src="assets/instagram.svg" alt="instagram.svg" class="w-[40px] h-[40px]" />
+                <img src="assets/whatsapp.svg" alt="whatsapp.svg" class="w-[40px] h-[40px]" />
+                <img src="assets/youtube.svg" alt="youtube.svg" class="w-[40px] h-[40px]" />
+
+            </div>
+
+            <!-- our services -->
+            <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
+
+                <h2 class="text-lg font-bold text-[#03436A]">Our Services</h2>
+
+                <div class="flex flex-col gap-3 items-center text-center p-4 border border-[#DDDDDD] rounded-2xl">
+
+                    <img src="assets/web-design.svg" alt="web-design" class="w-[48px] h-[48px]" />
+
+                    <p class="text-base font-semibold text-[#03436A]">Website Designing</p>
+
+                    <p class="text-sm text-[#616161]">We provide several kinds of services for our customers. Majority
+                        of business owners are
+                        successful in their business using our service.
+                    </p>
+
+                </div>
+
+                <div class="flex flex-col gap-3 items-center text-center p-4 border border-[#DDDDDD] rounded-2xl">
+
+                    <img src="assets/digital-marketing.svg" alt="digital-marketing" class="w-[48px] h-[48px]" />
+
+                    <p class="text-base font-semibold text-[#03436A]">Digital Marketing</p>
+
+                    <p class="text-sm text-[#616161]">Search Engine Optimisation is essential tool to increase ranking
+                        of the business in search engine result page. this service helps you to keep..
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- our products -->
+            <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
+                <h2 class="text-lg font-bold text-[#03436A]">Our Products</h2>
+
+                <div class="flex flex-col gap-3 items-center text-center p-4 border border-[#DDDDDD] rounded-2xl">
+
+                    <img src="assets/radblock.svg" alt="radblock.svg" class="w-[150px] h-[150px]" />
+
+                    <p class="text-base font-semibold text-[#03436A]">Radblock</p>
+
+                    <p class="text-sm text-[#616161]">Radblok is a US Patented technology, a research driven enterprise
+                        engaged in a research , design, development and manufacture of ant.
+                    </p>
+
+                </div>
+
+                <div class="flex flex-col gap-3 items-center text-center p-4 border border-[#DDDDDD] rounded-2xl">
+
+                    <img src="assets/hand-held-terminal.svg" alt="hand-held-terminal.svg" class="w-[150px] h-[150px]" />
+
+                    <p class="text-base font-semibold text-[#03436A]">Hand Held Terminals</p>
+
+                    <p class="text-sm text-[#616161]">Search Engine Optimisation is essential tool to increase ranking
+                        of the business in search engine result page. this service helps you to keep..
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- make an appointment -->
+            <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
+                <h2 class="text-lg font-bold text-[#03436A]">Make an Appointment</h2>
+
+                <input type="date" id="date" name="date"
+                    class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" placeholder="Date" />
+                <input type="time" id="time" name="time"
+                    class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" placeholder="Hour" />
+
+
+                <button id="getAppointmentBtn"
+                    class="p-3 px-6 text-sm text-white rounded-full bg-gradient-to-b from-[#238AC8] to-[#00619D]">Get
+                    Appointment</button>
+
+            </div>
+
+            <!-- enquiries -->
+            <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
+                <h2 class="text-lg font-bold text-[#03436A]">Enquiries</h2>
+
+                <input type="text" id="name" class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full"
+                    placeholder="Your Name" />
+                <input type="email" id="email" class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full"
+                    placeholder="Email Address" />
+                <input type="text" id="phone" class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full"
+                    placeholder="Phone Number" />
+
+                <textarea rows="4" placeholder="Enter your text here..."
+                    class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
+                </textarea>
+
+                <button id="sendMessageBtn"
+                    class="p-3 px-6 text-sm text-white rounded-full bg-gradient-to-b from-[#238AC8] to-[#00619D]">Send
+                    Message</button>
+            </div>
+
+            <!-- business hours -->
+            <div class="w-full p-4 bg-white rounded-2xl flex flex-col items-center text-center justify-start gap-3">
+                <h2 class="text-lg font-bold text-[#03436A]">Business Hours</h2>
+
+                <div class="flex flex-col gap-1">
+                    <p class="text-center text-[#616161] text-sm">Mon to Fri</p>
+                    <p class="text-[#3F5563] text-base font-bold text-center">08:00 AM - 04:00 PM</p>
+                </div>
+
+
+            </div>
+
+            <!-- feedback -->
+            <div class="flex flex-col items-center justify-center mb-20">
+
+                <button id="feedback-btn">
+                    <img src="assets/feedback.svg" alt="feedback" class="w-full" />
+                </button>
+
+            </div>
+
+            <div class="fixed w-full h-20 flex items-end justify-center bottom-0 left-0">
+
+                <div class="w-96 px-2">
+                    <div class="flex items-center gap-4 p-4 w-full">
+
+                        <button
+                            class="p-3 px-6 text-sm text-white rounded-full bg-gradient-to-b w-full from-[#238AC8] to-[#00619D]">Share</button>
+
+                        <button
+                            class="p-3 px-6 text-sm text-white rounded-full bg-gradient-to-b w-full from-[#FF9306] to-[#C57001]">Save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- feedback modal -->
+    <div id="feedback-modal"
+        class="hidden w-full h-full fixed top-0 left-0 p-5 bg-black/60 flex items-center justify-center">
+        <div class="w-96 p-6">
+            <div class="w-full bg-white rounded-2xl shadow overflow-hidden">
+
+                <div class="w-full px-4 pt-4 text-center flex flex-col gap-1">
+                    <h2 class="lg:text-xl text-lg font-semibold text-[#121212]">Feedback</h2>
+                </div>
+
+                <div class="p-6 flex flex-col w-full gap-4">
+
+                    <div class="flex flex-col gap-4 p-4 border border-[#DDDDDD] rounded-lg">
+                        <h2 class="text-base font-semibold text-[#19415A]">How would you rate your Experience?</h2>
+
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="experience" value="excellent"
+                                    class="form-radio h-4 w-4 text-[#19415A] focus:ring-[#19415A]" />
+                                <span class="ml-2 text-sm text-[#19415A]">Excellent</span>
+                            </label>
+
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="experience" value="very_good"
+                                    class="form-radio h-4 w-4 text-[#19415A] focus:ring-[#19415A]" />
+                                <span class="ml-2 text-sm text-[#19415A]">Very Good</span>
+                            </label>
+
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="experience" value="good"
+                                    class="form-radio h-4 w-4 text-[#19415A] focus:ring-[#19415A]" />
+                                <span class="ml-2 text-sm text-[#19415A]">Good</span>
+                            </label>
+
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="experience" value="fair"
+                                    class="form-radio h-4 w-4 text-[#19415A] focus:ring-[#19415A]" />
+                                <span class="ml-2 text-sm text-[#19415A]">Fair</span>
+                            </label>
+
+                            <label class="flex items-center cursor-pointer">
+                                <input type="radio" name="experience" value="poor"
+                                    class="form-radio h-4 w-4 text-[#19415A] focus:ring-[#19415A]" />
+                                <span class="ml-2 text-sm text-[#19415A]">Poor</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input id="email" name="email" placeholder="Your Email" required
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        title="Please enter a valid email address"
+                        class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
+
+                    <input id="name" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+"
+                        title="Please enter a valid name"
+                        class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
+
+                    <input id="phone" name="phone" placeholder="Phone Number" required
+                        pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" title="Please enter a valid phone number"
+                        class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
+
+
+                    <!-- <textarea rows="4" placeholder="Share your suggestions"
+                    class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
+                </textarea> -->
+                    <textarea rows="4" placeholder="Enter your text here..."
+                        class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
+</textarea>
+
+
+                    <div class="w-full flex items-center justify-center gap-5 mt-4">
+                        <button id="cancelBtn"
+                            class="bg-[#E2E8F0] text-[#19415A] font-medium py-3 w-full text-sm rounded-full">Cancel</button>
+
+                        <button id="submitBtn"
+                            class="py-3 w-full text-sm text-white rounded-full bg-gradient-to-b from-[#238AC8] to-[#00619D]">
+                            Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- thank you modal -->
+    <div id="thank-you-modal"
+        class="hidden w-full h-full fixed top-0 left-0 p-4 bg-black/60 flex items-center justify-center">
+
+        <div class="w-96 p-6">
+            <div class="w-full bg-white rounded-3xl shadow overflow-hidden p-6">
+
+                <div class="flex flex-col items-center justify-center text-center gap-4">
+                    <h2 id="thank-you-modal-title" class="text-lg font-bold text-[#19415A]">Thank you for your feedback!
+                    </h2>
+                    <button id="okayBtn"
+                        class="py-3 w-fit px-6 text-sm text-white rounded-full bg-gradient-to-b from-[#238AC8] to-[#00619D]">
+                        Okay</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const textarea = document.querySelector('textarea');
+
+        textarea.addEventListener('input', () => {
+            if (textarea.value.trim() === '') {
+                textarea.classList.add('empty');
+            } else {
+                textarea.classList.remove('empty');
+            }
+        });
+
+        const feedbackModal = document.getElementById('feedback-modal');
+        const thankYouModal = document.getElementById('thank-you-modal');
+        const thankYouModalTitle = document.getElementById('thank-you-modal-title');
+        const feedbackBtn = document.getElementById('feedback-btn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        const okayBtn = document.getElementById('okayBtn');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+        const getAppointmentBtn = document.getElementById('getAppointmentBtn');
+
+        feedbackBtn.addEventListener('click', () => {
+            feedbackModal.classList.remove('hidden');
+            document.body.classList.add('no-scroll');
+        });
+
+        cancelBtn.addEventListener('click', () => {
+            feedbackModal.classList.add('hidden');
+            document.body.classList.remove('no-scroll');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === feedbackModal) {
+                feedbackModal.classList.add('hidden');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+
+        submitBtn.addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            if (name && phone && email) {
+                feedbackModal.classList.add('hidden');
+                thankYouModalTitle.textContent = "Thank you for your feedback!";
+                thankYouModal.classList.remove('hidden');
+                document.body.classList.add('no-scroll');
+            } else {
+                alert('Please fill all the fields.');
+            }
+        });
+
+        okayBtn.addEventListener('click', () => {
+            thankYouModal.classList.add('hidden');
+            document.body.classList.remove('no-scroll');
+        });
+
+        sendMessageBtn.addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            if (name && phone && email) {
+                thankYouModalTitle.textContent = "Thank you!";
+                thankYouModal.classList.remove('hidden');
+                document.body.classList.add('no-scroll');
+            } else {
+                alert('Please fill all the fields.');
+            }
+        });
+
+        getAppointmentBtn.addEventListener('click', () => {
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+
+            if (date && time) {
+                thankYouModalTitle.textContent = "Thank you!";
+                thankYouModal.classList.remove('hidden');
+                document.body.classList.add('no-scroll');
+            } else {
+                alert('Please fill in both date and time.');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
