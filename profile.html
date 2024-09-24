@@ -14,23 +14,6 @@
     <title>Sapio Business Profile</title>
 
     <style>
-        textarea::placeholder {
-            color: transparent;
-            /* Makes the placeholder invisible */
-            transition: color 0.2s;
-            /* Smooth transition for color change */
-        }
-
-        textarea:not(:placeholder-shown) {
-            color: #000;
-            /* Default text color when there's content */
-        }
-
-        textarea:focus::placeholder {
-            color: #999;
-            /* Change the placeholder color on focus */
-        }
-
         .no-scroll {
             overflow: hidden;
         }
@@ -990,6 +973,23 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 line-height: 1.75rem;
             }
         }
+
+        textarea::placeholder {
+            /* color: transparent; */
+            /* Makes the placeholder invisible */
+            transition: color 0.2s;
+            /* Smooth transition for color change */
+        }
+
+        textarea:not(:placeholder-shown) {
+            color: #000;
+            /* Default text color when there's content */
+        }
+
+        textarea:focus::placeholder {
+            color: #999;
+            /* Change the placeholder color on focus */
+        }
     </style>
 </head>
 
@@ -1149,9 +1149,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 <input type="text" id="phone" class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full"
                     placeholder="Phone Number" />
 
-                <textarea rows="4" placeholder="Enter your text here..."
+                <textarea rows="4" name="notes" id="notes" placeholder="Enter your text here..."
                     class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
-                </textarea>
+</textarea>
 
                 <button id="sendMessageBtn"
                     class="p-3 px-6 text-sm text-white rounded-full bg-gradient-to-b from-[#238AC8] to-[#00619D]">Send
@@ -1181,7 +1181,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             <div class="fixed w-full h-20 flex items-end justify-center bottom-0 left-0">
 
-                <div class="w-96">
+                <div class="w-96 px-2">
                     <div class="flex items-center gap-4 p-4 w-full">
 
                         <button
@@ -1199,7 +1199,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     </div>
 
-    <!-- feedback modal -->
     <div id="feedback-modal"
         class="hidden w-full h-full fixed top-0 left-0 p-5 bg-black/60 flex items-center justify-center">
         <div class="w-96 p-6">
@@ -1247,16 +1246,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </div>
                     </div>
 
-                    <input id="email" name="email" placeholder="Your Email" required
+                    <input required id="femail" name="femail" placeholder="Your Email" required
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                         title="Please enter a valid email address"
                         class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
 
-                    <input id="name" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+"
+                    <input required id="fname" name="fname" placeholder="Your Name" required pattern="[A-Za-z\s]+"
                         title="Please enter a valid name"
                         class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
 
-                    <input id="phone" name="phone" placeholder="Phone Number" required
+                    <input required id="fphone" name="fphone" placeholder="Phone Number" required
                         pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" title="Please enter a valid phone number"
                         class="p-3 border border-[#DDDDDD] rounded-full text-sm pl-3 w-full" />
 
@@ -1264,7 +1263,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <!-- <textarea rows="4" placeholder="Share your suggestions"
                     class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
                 </textarea> -->
-                    <textarea rows="4" placeholder="Enter your text here..."
+                    <textarea rows="4" name="notes" id="notes" placeholder="Enter your text here..."
                         class="w-full border p-2 border-gray-300 text-sm rounded-2xl outline-none">
 </textarea>
 
@@ -1282,7 +1281,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
     </div>
 
-    <!-- thank you modal -->
     <div id="thank-you-modal"
         class="hidden w-full h-full fixed top-0 left-0 p-4 bg-black/60 flex items-center justify-center">
 
@@ -1341,11 +1339,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         });
 
         submitBtn.addEventListener('click', () => {
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
+            const fname = document.getElementById('fname').value;
+            const fphone = document.getElementById('fphone').value;
+            const femail = document.getElementById('femail').value;
 
-            if (name && phone && email) {
+            if (fname && fphone && femail) {
                 feedbackModal.classList.add('hidden');
                 thankYouModalTitle.textContent = "Thank you for your feedback!";
                 thankYouModal.classList.remove('hidden');
